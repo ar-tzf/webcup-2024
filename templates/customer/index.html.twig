@@ -1,0 +1,154 @@
+  <!-- start header section -->
+{{ include('include/header.html.twig', {page: 0}) }}
+  <!-- end header section -->
+
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        </ol>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <div class="detail-box">
+                <div>
+                  <h1>
+                    Saddle & Spice <br>
+                    <span>
+                      Osez l'Aventure Culinaire du Far West !
+                    </span>
+                  </h1>
+                  <p>
+                    Plongez dans un voyage gustatif palpitant où les saveurs audacieuses rencontrent l'esprit indompté du Far West.
+                    Laissez-vous emporter par nos plats sur une épopée culinaire captivante, 
+                    où chaque plat raconte une histoire et chaque bouchée vous transporte dans les vastes étendues de l'Ouest sauvage. 
+                    Goûtez à l'authenticité, à la passion et à la tradition dans chaque assiette. 
+                  </p>
+                  <div class="btn-box">
+                    <a href={{ path('contact', parameters = []) }} class="btn-1"  style="background-color: #262626;">
+                      Nous Contacter
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                À propos de nous
+              </h2>
+            </div>
+            <p>
+              Bienvenue chez Saddle & Spice, une destination incontournable pour les amateurs de cuisine du Far West !
+              Niché au cœur des vastes étendues de l'Ouest sauvage, notre restaurant vous invite à embarquer pour un voyage culinaire palpitant,
+              où l'aventure et la gastronomie se rencontrent. 
+            </p>
+            <p>
+              Depuis notre ouverture, nous nous engageons à offrir à nos clients une expérience authentique et mémorable,
+              où chaque repas est une célébration de la cuisine du Far West. Notre équipe de chefs passionnés puise son inspiration dans les saveurs robustes et les traditions culinaires de la région, en combinant habilement les ingrédients frais et locaux pour créer des plats qui ravissent les sens et éveillent les papilles.
+            </p>
+            <a href={{ path('about', parameters = []) }} style="background-color: #262626;">
+              En savoir plus
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/pex4.jpg" alt="" style="width: 410px;height: 600px;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- about section -->
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="images/shutterstock_277128815_2.webp" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Nos Plats
+              </h2>
+            </div>
+            <p>
+              Nos plats sont le fruit d'une passion profonde pour les ingrédients de qualité et les techniques de cuisine traditionnelles.
+              Chaque plat est méticuleusement préparé avec des ingrédients frais et locaux,
+              capturant l'essence même de la cuisine du Far West dans chaque bouchée.
+            </p>
+            <a href="" style="background-color: #262626;">
+              Nos menu
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about section -->
+
+  <!-- Galleries --> 
+  <div class="container py-5">
+    <div class="row text-center py-3">
+        <div class="m-auto heading_container">
+            <h2>Galleries</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="shop-single.html">
+                    <img src="images/image12-mi.jpg" class="card-img-top" alt="...">
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="shop-single.html">
+                    <img src="images/shutterstock_687437104.webp" class="card-img-top" alt="...">
+                </a>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 mb-4">
+            <div class="card h-100">
+                <a href="shop-single.html">
+                    <img src="images/pexels-robinstickel-70497.jpg" class="card-img-top" alt="...">
+                </a>
+            </div>
+        </div>
+        <p style="text-align: center;margin: auto;">
+          <a href={{ path('gallery', parameters = []) }} style="color: #e93f1a;">Voir plus</a>
+        </p>
+    </div>
+  </div>
+
+  <!-- end info section -->
+
+{{ include('include/footer.html.twig') }}
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>

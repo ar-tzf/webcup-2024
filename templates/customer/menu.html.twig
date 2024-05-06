@@ -1,0 +1,57 @@
+{{ include('include/header.html.twig', {page: 1}) }}
+
+  <!-- about section -->
+  <div class="container-fluid">
+    <div class="row" style="margin: 40px 30px;">
+      <!-- Left side for menu types -->
+      <div class="col-md-2">
+        <h2 style="font-size: 20px;text-decoration: underline;margin-bottom: 25px;margin-left: 18px;">Menu</h2>
+        <ul class="list-group menu-types" style="width: 200px;height: auto;">
+          <a href=""><li class="list-group-item" style="padding: 15px;color: #e93f1a;">Menu 1</li><a/>
+          <a href=""><li class="list-group-item" style="padding: 15px;color: #e93f1a;">Menu 2</li><a/>
+          <a href=""><li class="list-group-item" style="padding: 15px;color: #e93f1a;">Menu 3</li><a/>
+          <!-- Add more menu types as needed -->
+        </ul>
+      </div>
+      <!-- Right side for selected menus -->
+      <div class="col-md-8">
+        <h2 style="font-size: 20px;text-decoration: underline;margin-bottom: 25px;margin-left: 18px;width: 100px;">Nos Plats</h2>
+        <div class="menu-items">
+          <ul class="list-group menu-types" style="width: 200px;height: auto;">
+          <li class="list-group-item" style="padding: 15px;color: #e93f1a;width: 390%;height:auto;margin-bottom: 20px;">
+            <div class="row" style="width: auto;margin: -14px -14px;">
+              <img src="images/image12-mi.jpg" class="card-img-top" style="width: 240px;" alt="...">
+              <div>
+                <p style="color: black;margin-left: 20px;">Nom:</p>
+                <p style="color: black;margin-left: 20px;">Prix:</p>
+                <p style="color: black;margin-left: 20px;">Description:</p>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item" style="padding: 15px;color: #e93f1a;width: 390%;height:auto;margin-bottom: 20px;">
+            <div class="row" style="width: auto;margin: -14px -14px;">
+              <img src="images/image12-mi.jpg" class="card-img-top" style="width: 240px;" alt="...">
+              <div>
+                <p style="color: black;margin-left: 20px;">Nom:</p>
+                <p style="color: black;margin-left: 20px;">Prix:</p>
+                <p style="color: black;margin-left: 20px;">Description:</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>            
+  <!-- end about section -->
+
+  <!-- footer section -->
+{{ include('include/footer.html.twig') }}
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
